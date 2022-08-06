@@ -8,6 +8,10 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
 /* NAV STYLES START */
 
 header {
@@ -32,7 +36,7 @@ header ul {
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
-    list-style: none;
+    /* list-style: none; */
 }
 
 header ul li a {
@@ -68,7 +72,7 @@ header ul li a:hover {
     font-size: 30px;
     background-color: #77bac7;
     color: #212a33;
-    box-shadow: -3px 3px 8px;
+    box-shadow: 3px 3px 8px;
 }
 
 /* MAIN STYLES START */
@@ -82,16 +86,53 @@ main {
 .about-me, .work, .contact-me {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     color: #212a33;
 }
 
 .title {
+    text-align: center;
     width: 50%;
     padding: 5px;
     margin: 0 auto;
     font-size: 35px;
     border-bottom: 3px solid #212a33;
+}
+
+.about-me p {
+    padding: 15px 20px;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+/* WORK STYLES START */
+
+.card {
+    position: relative;
+    height: 300px;
+    width: 80%;
+    border: 3px solid #77bac7;
+    margin: 15px 20px;
+    overflow: auto;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 30px;
+    padding: 10px 15px;
+    background-color: #77bac7;
+    font-size: 25px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+/* CONTACT ME STYLES START */
+
+.contacts {
+    font-size: 25px;
 }
 
 /* MEDIA QUERIES START */
@@ -114,6 +155,7 @@ main {
     .title {
         border-bottom: none;
         border-right: 3px solid #212a33;
+        margin: 20px 0;
         padding: 0px 20px;
         text-align: right;
     }
