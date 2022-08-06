@@ -2,4 +2,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #e6f7fa;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* NAV STYLES START */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 50px;
+    background-color: #212a33;
+}
+
+header h1 {
+    width: 300px;
+    font-size: 35px;
+    padding: 5px 0px;
+    background-color: #77bac7;
+}
+
+header ul {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #212a33;
+}
+
+header ul li a {
+    padding: 5px;
+    text-decoration: none;
+    color: #77bac7;
+    font-size: 25px;
+    line-height: 1.5;
+    border-bottom: 3px solid #77bac7;
+    background-color: #212a33;
+}
+
+header ul li a:hover {
+    background: #77bac7;
+    color: #212a33;
+    transition-duration: 0.5s;
+}
+
+/* HERO STYLES START */
+
+.hero {
+    height: 400px;
+    background-image: url("../images/fleur.png");
 }
