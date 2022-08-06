@@ -144,6 +144,17 @@ main {
 
 .contacts {
     font-size: 25px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.contacts li {
+    padding: 10px;
+}
+
+.contacts li a {
+    text-decoration: none;
+    color: #212a33;
 }
 
 /* MEDIA QUERIES START */
@@ -169,5 +180,10 @@ main {
         margin: 20px 0;
         padding: 0px 20px;
         text-align: right;
+    }
+    
+    .contacts {
+        display: flex;
+        justify-content: space-between;
     }
 }
