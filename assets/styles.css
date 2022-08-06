@@ -36,7 +36,6 @@ header ul {
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
-    /* list-style: none; */
 }
 
 header ul li a {
@@ -122,11 +121,23 @@ main {
     padding: 10px 15px;
     background-color: #77bac7;
     font-size: 25px;
+    color: #212a33;
 }
 
 .subtitle {
     font-size: 16px;
     font-weight: lighter;
+}
+
+.run-buddy {
+    background-image: url(./images/run-buddy.jpg);
+    background-position: bottom right;
+}
+
+.run-buddy:hover {
+    background-image:
+    linear-gradient(to bottom, rgba(230, 218, 179, 0.25), rgba(230, 218, 179, 0.5)),
+    url('./images/run-buddy.jpg');
 }
 
 /* CONTACT ME STYLES START */
