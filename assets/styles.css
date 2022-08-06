@@ -52,20 +52,69 @@ header ul li a:hover {
 
 /* HERO STYLES START */
 
+.hero {
+    position: relative;
+    height: 400px;
+    background-image: url(./images/hero-flowers.jpg);
+    /* Photo by Yulia Khvorostiana on Unsplash */
+    background-position: right;
+}
+
+.hero h2 {
+    position: absolute;
+    bottom: 35px;
+    right: 50px;
+    padding: 5px 10px;
+    font-size: 30px;
+    background-color: #77bac7;
+    color: #212a33;
+    box-shadow: -3px 3px 8px;
+}
+
 /* MAIN STYLES START */
 
 main {
     background-color: #e6f7fa;
 }
 
+/* ABOUT ME STYLES START */
+
+.about-me, .work, .contact-me {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #212a33;
+}
+
+.title {
+    width: 50%;
+    padding: 5px;
+    margin: 0 auto;
+    font-size: 35px;
+    border-bottom: 3px solid #212a33;
+}
+
 /* MEDIA QUERIES START */
 
 @media screen and (min-width: 768px) {
+    /* Breaks Nav into a single line */
     header {
         flex-direction: row;
     }
 
     header ul li a {
         margin: 5px;
+    }
+
+    /* Breaks out into two-column layout */
+    .about-me, .work, .contact-me {
+        flex-direction: row;
+    }
+
+    .title {
+        border-bottom: none;
+        border-right: 3px solid #212a33;
+        padding: 0px 20px;
+        text-align: right;
     }
 }
