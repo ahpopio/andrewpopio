@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #e6f7fa;
 }
 
 body {
@@ -25,6 +24,7 @@ header h1 {
     width: 300px;
     font-size: 35px;
     padding: 5px 0px;
+    margin: 0px 0px 0px -50px;
     background-color: #77bac7;
 }
 
@@ -33,7 +33,6 @@ header ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    background-color: #212a33;
 }
 
 header ul li a {
@@ -43,7 +42,6 @@ header ul li a {
     font-size: 25px;
     line-height: 1.5;
     border-bottom: 3px solid #77bac7;
-    background-color: #212a33;
 }
 
 header ul li a:hover {
@@ -54,7 +52,20 @@ header ul li a:hover {
 
 /* HERO STYLES START */
 
-.hero {
-    height: 400px;
-    background-image: url("../images/fleur.png");
+/* MAIN STYLES START */
+
+main {
+    background-color: #e6f7fa;
+}
+
+/* MEDIA QUERIES START */
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+    }
+
+    header ul li a {
+        margin: 5px;
+    }
 }
