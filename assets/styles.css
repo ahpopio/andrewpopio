@@ -106,10 +106,18 @@ main {
 
 /* WORK STYLES START */
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .card {
     position: relative;
-    height: 300px;
-    width: 80%;
+    height: 400px;
+    width: 500px;
     border: 3px solid #77bac7;
     margin: 15px 20px;
     overflow: auto;
@@ -140,6 +148,50 @@ main {
     url('./images/run-buddy.jpg');
 }
 
+.circuit {
+    background-image: url(./images/circuit.jpg);
+    /* Photo by Alexandre Debiève on Unsplash */
+}
+
+.circuit:hover {
+    background-image:
+    linear-gradient(to bottom, rgba(230, 218, 179, 0.25), rgba(230, 218, 179, 0.5)),
+    url('./images/circuit.jpg');
+}
+
+.matrix {
+    background-image: url(./images/matrix.jpg);
+    /* Photo by Markus Spiske on Unsplash */
+}
+
+.matrix:hover {
+    background-image:
+    linear-gradient(to bottom, rgba(230, 218, 179, 0.25), rgba(230, 218, 179, 0.5)),
+    url('./images/matrix.jpg');
+}
+
+.server {
+    background-image: url(./images/server.jpg);
+    /* Photo by Matthieu Beaumont on Unsplash */
+}
+
+.server:hover {
+    background-image:
+    linear-gradient(to bottom, rgba(230, 218, 179, 0.25), rgba(230, 218, 179, 0.5)),
+    url('./images/server.jpg');
+}
+
+.mixer {
+    background-image: url(./images/mixer.jpg);
+    /* Photo by Alexey Ruban on Unsplash */
+}
+
+.mixer:hover {
+    background-image:
+    linear-gradient(to bottom, rgba(230, 218, 179, 0.25), rgba(230, 218, 179, 0.5)),
+    url('./images/mixer.jpg');
+}
+
 /* CONTACT ME STYLES START */
 
 .contacts {
@@ -153,8 +205,16 @@ main {
 }
 
 .contacts li a {
+    padding: 5px;
     text-decoration: none;
     color: #212a33;
+    border-bottom: 3px solid #212a33;
+}
+
+.contacts li a:hover {
+    background-color: #212a33;
+    color: #e6f7fa;
+    transition-duration: 0.5s;
 }
 
 /* MEDIA QUERIES START */
@@ -175,11 +235,20 @@ main {
     }
 
     .title {
+        width: 25%;
         border-bottom: none;
         border-right: 3px solid #212a33;
         margin: 20px 0;
         padding: 0px 20px;
         text-align: right;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 30%;
     }
     
     .contacts {
