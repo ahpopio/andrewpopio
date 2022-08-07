@@ -99,7 +99,7 @@ main {
 }
 
 .about-me p {
-    padding: 15px 20px;
+    padding: 15px 80px;
     font-size: 18px;
     line-height: 1.3;
 }
@@ -117,7 +117,7 @@ main {
 .card {
     position: relative;
     height: 400px;
-    width: 500px;
+    width: 700px;
     border: 3px solid #77bac7;
     margin: 15px 20px;
     overflow: auto;
@@ -140,6 +140,7 @@ main {
 .run-buddy {
     background-image: url(./images/run-buddy.jpg);
     background-position: bottom right;
+    background-size: cover;
 }
 
 .run-buddy:hover {
@@ -151,6 +152,7 @@ main {
 .circuit {
     background-image: url(./images/circuit.jpg);
     /* Photo by Alexandre Debiève on Unsplash */
+    background-size: cover;
 }
 
 .circuit:hover {
@@ -184,6 +186,7 @@ main {
 .mixer {
     background-image: url(./images/mixer.jpg);
     /* Photo by Alexey Ruban on Unsplash */
+    background-size: cover;
 }
 
 .mixer:hover {
@@ -229,8 +232,10 @@ main {
         margin: 5px;
     }
 
+
+@media screen and (min-width: 980px) {
     /* Breaks out into two-column layout */
-    .about-me, .work, .contact-me {
+    .about-me, .work, .contact-me, .cards {
         flex-direction: row;
     }
 
@@ -243,16 +248,28 @@ main {
         text-align: right;
     }
 
+    .work .title {
+        padding: 0px 20px 750px 20px;
+    }
+
     .cards {
         flex-wrap: wrap;
+        align-items: center;
     }
 
     .card {
-        width: 30%;
+        width: 45%;
+        height: 200px;
+    }
+
+    .run-buddy {
+        width: 95%;
+        height: 400px;
     }
     
-    .contacts {
+    .contacts ul {
         display: flex;
         justify-content: space-between;
+        padding-left: 50px;
     }
 }
