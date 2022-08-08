@@ -58,9 +58,9 @@ header ul li a:hover {
 .hero {
     position: relative;
     height: 400px;
-    background-image: url(./images/hero-flowers.jpg);
-    /* Photo by Yulia Khvorostiana on Unsplash */
+    background-image: url(./images/handdrawn.jpg);
     background-position: right;
+    background-size: cover;
 }
 
 .hero h2 {
